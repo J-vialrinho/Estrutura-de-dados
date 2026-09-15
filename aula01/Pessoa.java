@@ -1,5 +1,4 @@
 public class Pessoa{
-    
     private String nome;
     private int idade;
     private Endereco end;
@@ -29,7 +28,7 @@ public class Pessoa{
     public void setIdade(int idade){
         this.idade = idade;
     }
-    
+
     public int getIdade(){
         return this.idade;
     }
@@ -44,6 +43,6 @@ public class Pessoa{
 
     @Override
     public String toString(){
-        return String.format("Pessoa[Nome: %s, Idade: %d, %s]", getNome(), getIdade(), end.toString());
+        return String.format("Pessoa{Nome: %s, Idade: %d, %s}",getNome(), getIdade(), end.toString());
     }
 }
